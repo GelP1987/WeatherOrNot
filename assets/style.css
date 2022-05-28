@@ -1,3 +1,8 @@
+* {
+
+}
+
+
 body {
     font-family: 'Open Sans', sans-serif;
   }
@@ -10,4 +15,26 @@ body {
   h6 {
     font-family: 'Staatliches', sans-serif;
   }
-  
+
+  p {
+    display: flex;
+    justify-content: center;
+  }
+  p.day-one, p.day-two, p.day-three, p.day-four, p.day-five {
+    border-bottom: solid 5px teal;
+    border-radius: 50%;
+  }
+
+  h5{
+    justify-content: center;
+    display: flex;
+  }
+  h3 {
+    align-content: center;
+  }
+   img {
+     height: 30px;
+     width: 30px;
+     margin-bottom: 25px;
+
+   }

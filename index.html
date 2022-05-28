@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/pulse/bootstrap.min.css"/>
+  <link rel="stylesheet" href="./assets/style.css">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,14 +26,26 @@
         <div class="container text-center mt-2">
             <button class="btn btn-primary" id="submit">Get Weather</button>
         </div>
-        <div id="content">
+        <div class="container g-5 p-5 grid">
+        <div class="container grid p-5 g-5" id="content" >
+        <h3>
             <p class="city-date"></p>
+        </h3>
+        <h4>
             <p class="temp"></p>
             <p class="wind"></p>
             <p class="humidity"></p>
             <p class="uv-index"></p>
-            
+        </h4>
         </div>
+        <div class="weekly-forecast">
+            <div class="day-one"></div>
+            <div class="day-two"></div>
+            <div class="day-three"></div>
+            <div class="day-four"></div>
+            <div class="day-five"></div>
+        </div>
+    </div>
         <footer class="mt-5 p-3 text-center bg-light">
              WeatherOrNot!
         </footer>
