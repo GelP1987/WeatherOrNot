@@ -40,7 +40,7 @@ var fetchTodaysForecast = function(city,lat,lon) {
         document.querySelector(".uv-index").innerHTML = "UV Index: "+uvIndex;
         if (uvIndex <2) {
           document.querySelector(".uv-index").classList.add("text-success");
-          document.querySelector(".uv-index").classList.remove("text-warning text-danger text-primary text-info");
+          document.querySelector(".uv-index").classList.remove("text-warning", "text-danger", "text-primary", "text-info");
         } else if (uvIndex >2 && uvIndex <5){
           document.querySelector(".uv-index").classList.add("text-warning");
           document.querySelector(".uv-index").classList.remove("text-success", "text-danger", "text-primary", "text-info");
@@ -71,7 +71,7 @@ fetch(apiUrl).then(function(response) {
       var dayOneHumidity= JSON.stringify(data.daily[1].humidity);
       var dayOneIcon=JSON.stringify(data.daily[1].weather[0].icon).slice(1, -1);
       document.querySelector(".day-one").innerHTML= 
-      "<p><h5>5 Day Forecast</h5></p><p>"+dayOneDate+"</p><p>Temp: "+dayOneTemp+"</p><p>Humidity: "+dayOneHumidity+"</p><p>Wind Speed: "+dayOneWind+"</p><p><img src='http://openweathermap.org/img/wn/" +dayOneIcon + ".png'></p>";
+      "<p>"+dayOneDate+"</p><p>Temp: "+dayOneTemp+"</p><p>Humidity: "+dayOneHumidity+"</p><p>Wind Speed: "+dayOneWind+"</p><p><img src='http://openweathermap.org/img/wn/" +dayOneIcon + ".png'></p>";
       var dayTwoDate= new Date(JSON.stringify(data.daily[2].dt)*1000).toLocaleDateString("en-US");
       var dayTwoTemp = JSON.stringify(data.daily[2].temp.day);
       var dayTwoWind = JSON.stringify(data.daily[2].wind_speed);

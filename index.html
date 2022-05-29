@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/pulse/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/lux/bootstrap.min.css"/>
   <link rel="stylesheet" href="./assets/style.css">
   <head>
     <meta charset="UTF-8" />
@@ -38,18 +38,22 @@
             <p class="uv-index"></p>
         </h4>
         </div>
+        <div class="container">
+            <div class="row">
         <div class="weekly-forecast">
-            <div class="day-one"></div>
-            <div class="day-two"></div>
-            <div class="day-three"></div>
-            <div class="day-four"></div>
-            <div class="day-five"></div>
+            <div id="flex" class="day-one"></div>
+            <div id="flex" class="day-two"></div>
+            <div id="flex" class="day-three"></div>
+            <div id="flex" class="day-four"></div>
+            <div id="flex" class="day-five"></div>
+        </div>
+        </div>
         </div>
     </div>
         <footer class="mt-5 p-3 text-center bg-light">
              WeatherOrNot!
         </footer>
   </body>
-
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="./assets/script.js"></script>
 </html>

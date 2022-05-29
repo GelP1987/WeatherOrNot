@@ -1,24 +1,11 @@
-* {
-
-}
-
-
 body {
-    font-family: 'Open Sans', sans-serif;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: 'Staatliches', sans-serif;
-  }
+   background-color:silver;
+ }
 
   p {
     display: flex;
     justify-content: center;
+    padding: 10px;
   }
   p.day-one, p.day-two, p.day-three, p.day-four, p.day-five {
     border-bottom: solid 5px teal;
@@ -36,5 +23,13 @@ body {
      height: 30px;
      width: 30px;
      margin-bottom: 25px;
+   }
+   .container {
+     display: flex;
+     order: 5;
+   }
 
+   #flex {
+     display:flex;
+     color:ghostwhite;
    }
