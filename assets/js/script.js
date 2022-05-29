@@ -29,7 +29,7 @@ var fetchTodaysForecast = function(city,lat,lon) {
       response.json().then(function(data){
         var date = new Date(JSON.stringify(data.current.dt)*1000).toLocaleDateString("en-US");
         var icon= JSON.stringify(data.current.weather[0].icon).slice(1, -1);
-        document.querySelector(".city-date").innerHTML= city + " " + date + "<img src='http://openweathermap.org/img/wn/" +icon + ".png'>";
+        document.querySelector(".city-date").innerHTML= city + " " + date + "<img src='https://openweathermap.org/img/wn/" +icon + ".png'>";
         var temp= JSON.stringify(data.current.temp);
         document.querySelector(".temp").innerHTML = "Temp: "+ temp;
         var wind=JSON.stringify(data.current.wind_speed);
@@ -71,35 +71,35 @@ fetch(apiUrl).then(function(response) {
       var dayOneHumidity= JSON.stringify(data.daily[1].humidity);
       var dayOneIcon=JSON.stringify(data.daily[1].weather[0].icon).slice(1, -1);
       document.querySelector(".day-one").innerHTML= 
-      "<p>"+dayOneDate+"</p><p>Temp: "+dayOneTemp+"</p><p>Humidity: "+dayOneHumidity+"</p><p>Wind Speed: "+dayOneWind+"</p><p><img src='http://openweathermap.org/img/wn/" +dayOneIcon + ".png'></p>";
+      "<p>"+dayOneDate+"</p><p>Temp: "+dayOneTemp+"</p><p>Humidity: "+dayOneHumidity+"</p><p>Wind Speed: "+dayOneWind+"</p><p><img src='https://openweathermap.org/img/wn/" +dayOneIcon + ".png'></p>";
       var dayTwoDate= new Date(JSON.stringify(data.daily[2].dt)*1000).toLocaleDateString("en-US");
       var dayTwoTemp = JSON.stringify(data.daily[2].temp.day);
       var dayTwoWind = JSON.stringify(data.daily[2].wind_speed);
       var dayTwoHumidity= JSON.stringify(data.daily[2].humidity);
       var dayTwoIcon=JSON.stringify(data.daily[2].weather[0].icon).slice(1, -1);
       document.querySelector(".day-two").innerHTML= 
-      "<p>"+dayTwoDate+"</p><p>Temp: "+dayTwoTemp+"</p><p>Humidity: "+dayTwoHumidity+"</p><p>Wind Speed: "+dayTwoWind+"</p><p><img src='http://openweathermap.org/img/wn/" +dayTwoIcon + ".png'></p>";
+      "<p>"+dayTwoDate+"</p><p>Temp: "+dayTwoTemp+"</p><p>Humidity: "+dayTwoHumidity+"</p><p>Wind Speed: "+dayTwoWind+"</p><p><img src='https://openweathermap.org/img/wn/" +dayTwoIcon + ".png'></p>";
       var dayThreeDate= new Date(JSON.stringify(data.daily[3].dt)*1000).toLocaleDateString("en-US");
       var dayThreeTemp = JSON.stringify(data.daily[3].temp.day);
       var dayThreeWind = JSON.stringify(data.daily[3].wind_speed);
       var dayThreeHumidity= JSON.stringify(data.daily[3].humidity);
       var dayThreeIcon=JSON.stringify(data.daily[3].weather[0].icon).slice(1, -1);
       document.querySelector(".day-three").innerHTML= 
-      "<p>"+dayThreeDate+"</p><p>Temp: "+dayThreeTemp+"</p><p>Humidity: "+dayThreeHumidity+"</p><p>Wind Speed: "+dayThreeWind+"</p><p><img src='http://openweathermap.org/img/wn/" +dayThreeIcon + ".png'></p>";
+      "<p>"+dayThreeDate+"</p><p>Temp: "+dayThreeTemp+"</p><p>Humidity: "+dayThreeHumidity+"</p><p>Wind Speed: "+dayThreeWind+"</p><p><img src='https://openweathermap.org/img/wn/" +dayThreeIcon + ".png'></p>";
       var dayFourDate= new Date(JSON.stringify(data.daily[3].dt)*1000).toLocaleDateString("en-US");
       var dayFourTemp = JSON.stringify(data.daily[4].temp.day);
       var dayFourWind = JSON.stringify(data.daily[4].wind_speed);
       var dayFourHumidity= JSON.stringify(data.daily[4].humidity);
       var dayFourIcon=JSON.stringify(data.daily[4].weather[0].icon).slice(1, -1);
       document.querySelector(".day-four").innerHTML= 
-      "<p>"+dayFourDate+"</p><p>Temp: "+dayFourTemp+"</p><p>Humidity: "+dayFourHumidity+"</p><p>Wind Speed: "+dayFourWind+"</p><p><img src='http://openweathermap.org/img/wn/" +dayFourIcon + ".png'></p>";
+      "<p>"+dayFourDate+"</p><p>Temp: "+dayFourTemp+"</p><p>Humidity: "+dayFourHumidity+"</p><p>Wind Speed: "+dayFourWind+"</p><p><img src='https://openweathermap.org/img/wn/" +dayFourIcon + ".png'></p>";
       var dayFiveDate= new Date(JSON.stringify(data.daily[3].dt)*1000).toLocaleDateString("en-US");
       var dayFiveTemp = JSON.stringify(data.daily[5].temp.day);
       var dayFiveWind = JSON.stringify(data.daily[5].wind_speed);
       var dayFiveHumidity= JSON.stringify(data.daily[5].humidity);
       var dayFiveIcon=JSON.stringify(data.daily[5].weather[0].icon).slice(1, -1);
       document.querySelector(".day-five").innerHTML= 
-      "<p>"+dayFiveDate+"</p><p>Temp: "+dayFiveTemp+"</p><p>Humidity: "+dayFiveHumidity+"</p><p>Wind Speed: "+dayFiveWind+"</p><p><img src='http://openweathermap.org/img/wn/" +dayFiveIcon + ".png'></p>";
+      "<p>"+dayFiveDate+"</p><p>Temp: "+dayFiveTemp+"</p><p>Humidity: "+dayFiveHumidity+"</p><p>Wind Speed: "+dayFiveWind+"</p><p><img src='https://openweathermap.org/img/wn/" +dayFiveIcon + ".png'></p>";
     })
 }
 });
