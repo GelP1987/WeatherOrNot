@@ -1,0 +1,35 @@
+body {
+   background-color:silver;
+ }
+
+  p {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  p.day-one, p.day-two, p.day-three, p.day-four, p.day-five {
+    border-bottom: solid 5px teal;
+    border-radius: 50%;
+  }
+
+  h5{
+    justify-content: center;
+    display: flex;
+  }
+  h3 {
+    align-content: center;
+  }
+   img {
+     height: 30px;
+     width: 30px;
+     margin-bottom: 25px;
+   }
+   .container {
+     display: flex;
+     order: 5;
+   }
+
+   #flex {
+     display:flex;
+     color:ghostwhite;
+   }
